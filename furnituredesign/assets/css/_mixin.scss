@@ -1,0 +1,31 @@
+@use "sass:math";
+
+@mixin mq-pc {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin mq-sp {
+  @media (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin line-height($font-size, $line-height) {
+  line-height: math.div($line-height, $font-size);
+}
+
+@mixin letter-spacing($letter-spacing) {
+  letter-spacing: math.div($letter-spacing, 1000) + 0em;
+}
+
+// spのカンプが幅360pxで作られていた場合
+@function spVw($px) {
+  @return math.div($px, $sp-width) * 100vw;
+}
+
+// pcのカンプが幅1366pxで作られていた場合
+@function pcVw($px) {
+  @return math.div($px, $pc-width) * 100vw;
+}

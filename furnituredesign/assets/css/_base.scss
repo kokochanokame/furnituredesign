@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "NotoSans-Medium", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: $black;
+  background-color: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-container {
+    padding: 0 40px;
+    width: 100%;
+    margin: 0 auto;
+
+   @include mq-pc {
+   max-width: 1360px;
+
+   }
+}

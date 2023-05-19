@@ -1,0 +1,69 @@
+.main {
+    margin-top: 80px;
+
+    @include mq-pc {
+        margin-top: 88px;
+    }
+}
+
+.items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+
+    li {
+        margin-top: 24px;
+        width: 46%;
+
+        @include mq-pc {
+            margin-top: 42px;
+            width: 23%;
+        }
+    }
+}
+
+.item-text {
+    margin-top: 12.36px;
+
+    p {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+
+        &:first-of-type {
+            margin-bottom: 6px;
+
+            @include mq-pc {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.more-btn-wrapper {
+    text-align: center;
+    margin-top: 46px;
+}
+
+.more-btn {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+
+}
+
+.pagenation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    ul {
+        display: flex;
+        gap: 40px;
+    }
+}
+
+.title {
+    font-size: 14px;
+    line-height: calc(21 /14);
+}

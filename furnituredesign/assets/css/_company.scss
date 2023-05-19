@@ -1,0 +1,44 @@
+.company-detail {
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+
+    dl {
+        padding: 20px 0;
+        border-bottom: 1px solid gray;
+
+        @include mq-pc{
+            display: flex;
+            gap: 124px;
+        }
+    }
+
+    dt {
+        white-space: nowrap;
+        font-weight: normal;
+        @include mq-pc {
+            width: 56px;
+        }
+
+    }
+    dd {
+        margin-top: 10px;
+    }
+}
+
+.google-map {
+    margin-top: 40px;
+  
+    
+    iframe {
+    position: relative;
+        height: 300px;
+        width: 100%;
+        filter: grayscale(1);
+        z-index: -1;
+
+        div {
+            z-index: 1;
+        }
+    }
+}
